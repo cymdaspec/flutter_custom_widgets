@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Center(
         child: Container(
-          child: Player(),
+          child: Player(audio: 'test_audio.mp3',),
         )
       )
     );

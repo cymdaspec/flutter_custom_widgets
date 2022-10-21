@@ -22,7 +22,7 @@ class HotreloadWidgetbook extends StatelessWidget {
                 WidgetbookUseCase(
                   name: 'regular',
                   builder: (context) => Center(
-                      child: Player()
+                      child: Player(audio: 'test_audio.mp3',)
                   ),
                 ),
               ],
