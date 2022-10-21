@@ -34,13 +34,15 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
-      body: Center(
-        child: Container(
-          child: Player(audio: 'https://www.naijafinix.com.ng/wp-content/uploads/2022/02/Yung-Lean-%E2%80%93-Ginseng-Strip-2002-via-Naijafinix.com_.mp3?_=1'),
-        )
-      )
-    );
+        body: Center(
+            child: Container(
+      child: Player(
+          audio:
+              'https://www.naijafinix.com.ng/wp-content/uploads/2022/02/Yung-Lean-%E2%80%93-Ginseng-Strip-2002-via-Naijafinix.com_.mp3?_=1',
+          height: 500,
+          width: 380
+      ),
+    )));
   }
 }

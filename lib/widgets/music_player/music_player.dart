@@ -72,8 +72,10 @@ class _PlayerState extends State<Player> {
 
   Widget build(BuildContext context) {
     return Container(
+        width: widget.width,
+        height: widget.height,
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             InkWell(
               onTap: _handleTap, //изменение состояния плеера
@@ -91,10 +93,10 @@ class _PlayerState extends State<Player> {
               opacity: _buttonOnPressed ? 1.0 : 0.0,
               duration: const Duration(milliseconds: 500),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   IconButton(
-                    iconSize: 24,
+                    iconSize: 22,
                     splashRadius: 15,
                     icon: Icon(CupertinoIcons.gobackward_10),
                     color: Color(iconColor),
@@ -108,7 +110,7 @@ class _PlayerState extends State<Player> {
                     },
                   ),
                   IconButton(
-                    iconSize: 24,
+                    iconSize: 22,
                     splashRadius: 15,
                     icon: Icon(CupertinoIcons.stop),
                     color: Color(iconColor),
@@ -118,7 +120,7 @@ class _PlayerState extends State<Player> {
                     },
                   ),
                   IconButton(
-                    iconSize: 24,
+                    iconSize: 22,
                     splashRadius: 15,
                     icon: Icon(CupertinoIcons.play_arrow),
                     color: Color(iconColor),
@@ -130,7 +132,7 @@ class _PlayerState extends State<Player> {
                     },
                   ),
                   IconButton(
-                    iconSize: 24,
+                    iconSize: 22,
                     splashRadius: 15,
                     icon: Icon(CupertinoIcons.goforward_10),
                     color: Color(iconColor),
