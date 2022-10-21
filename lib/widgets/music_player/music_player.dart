@@ -36,7 +36,7 @@ class _PlayerState extends State<Player> {
     /*
     if (isPlaying == false) //убрать комменты чтобы воспроизведение было по нажатию кнопки
       {
-        player.play(AssetSource(fileName));
+        player.play(AssetSource('widget.audio'));
         isPlaying = true;
       }
      */
@@ -124,7 +124,7 @@ class _PlayerState extends State<Player> {
                     color: Color(iconColor),
                     onPressed: () {
                       if (isPlaying == false) {
-                        player.play(AssetSource(widget.audio));
+                        player.play(UrlSource(widget.audio), volume: 1);
                       }
                       isPlaying = true;
                     },

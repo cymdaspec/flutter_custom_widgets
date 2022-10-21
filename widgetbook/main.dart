@@ -22,9 +22,8 @@ class HotreloadWidgetbook extends StatelessWidget {
                 WidgetbookUseCase(
                   name: 'regular',
                   builder: (context) => Center(
-                      child: Player(audio: 'test_audio.mp3',)
+                      child: Player(audio: 'https://www.naijafinix.com.ng/wp-content/uploads/2022/02/Yung-Lean-%E2%80%93-Ginseng-Strip-2002-via-Naijafinix.com_.mp3?_=1'))
                   ),
-                ),
               ],
             ),
           ],
